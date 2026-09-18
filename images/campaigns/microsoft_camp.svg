@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <rect width="400" height="240" rx="16" fill="#0078D4"/>
+  <circle cx="340" cy="50" r="100" fill="#ffffff" fill-opacity="0.08"/>
+  <g transform="translate(30, 30)">
+    <rect x="0" y="0" width="20" height="20" fill="#F25022"/>
+    <rect x="24" y="0" width="20" height="20" fill="#7FBA00"/>
+    <rect x="0" y="24" width="20" height="20" fill="#00A4EF"/>
+    <rect x="24" y="24" width="20" height="20" fill="#FFB900"/>
+    <text x="60" y="32" font-family="system-ui, sans-serif" font-weight="900" font-size="20" fill="#ffffff">MICROSOFT</text>
+  </g>
+  <text x="30" y="130" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#ffffff">REQUIRED: Rs. 1,000 CARD</text>
+  <rect x="30" y="160" width="210" height="40" rx="10" fill="#10B981"/>
+  <text x="45" y="186" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#ffffff">YOU RECEIVE: Rs. 750</text>
+</svg>
