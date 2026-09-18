@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%">
+  <rect width="400" height="240" rx="16" fill="#047857"/>
+  <circle cx="340" cy="50" r="100" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="30" y="60" font-family="system-ui, sans-serif" font-weight="900" font-size="24" fill="#ffffff">SHOPHON PK</text>
+  <text x="30" y="130" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#ffffff">REQUIRED: Rs. 300 VOUCHER</text>
+  <rect x="30" y="160" width="200" height="40" rx="10" fill="#F59E0B"/>
+  <text x="45" y="186" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#0F172A">YOU RECEIVE: Rs. 220</text>
+</svg>
