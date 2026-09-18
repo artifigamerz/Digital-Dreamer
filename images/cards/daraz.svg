@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="darazGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722"/>
+      <stop offset="100%" stop-color="#E64A19"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="20" width="560" height="340" rx="24" fill="url(#darazGrad)"/>
+  <text x="60" y="110" font-family="system-ui, sans-serif" font-weight="900" font-size="38" fill="#ffffff" letter-spacing="1">daraz.pk</text>
+  <text x="60" y="210" font-family="system-ui, sans-serif" font-weight="800" font-size="28" fill="#ffffff">SHOPPING VOUCHER</text>
+  <text x="60" y="245" font-family="system-ui, sans-serif" font-size="14" fill="#FFCCBC">DISCOUNT CODE FOR PAKISTAN SHOPPERS</text>
+  <rect x="60" y="280" width="200" height="46" rx="10" fill="#ffffff" fill-opacity="0.25"/>
+  <text x="75" y="310" font-family="system-ui, sans-serif" font-weight="800" font-size="20" fill="#ffffff">Rs. 500 - 1,000</text>
+</svg>
