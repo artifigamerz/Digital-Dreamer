@@ -1,0 +1,12 @@
+{
+  "name": "rewardhub-pakistan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RewardHub Pakistan - Production Ready Gift Card Selling Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'Static build ready'"
+  }
+}
