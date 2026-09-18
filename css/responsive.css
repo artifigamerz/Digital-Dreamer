@@ -1,0 +1,279 @@
+/* ==========================================================================
+   NINETY SEVEN SALON — RESPONSIVE & MOBILE EXPERIENCE STYLESHEET
+   ========================================================================== */
+
+/* Persistent Bottom Mobile Action Bar (Mobile Only) */
+.mobile-action-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1200;
+  background-color: var(--bg-espresso);
+  border-top: var(--border-subtle-light);
+  grid-template-columns: 1fr 1fr 1.5fr;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-right: 1px solid rgba(250, 248, 245, 0.1);
+}
+
+.mobile-action-btn:last-child {
+  border-right: none;
+  background-color: var(--accent-gold);
+  color: var(--bg-espresso);
+}
+
+.mobile-action-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Fullscreen Mobile Navigation Overlay */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1500;
+  background-color: var(--bg-espresso);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-smooth);
+}
+
+.mobile-nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-nav-close {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.mobile-nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobile-nav-link {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.mobile-nav-link:hover {
+  color: var(--accent-gold);
+}
+
+.mobile-nav-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: var(--text-light-muted);
+  font-size: 0.9rem;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE BREAKPOINTS
+   -------------------------------------------------------------------------- */
+
+/* Laptop & Tablet Landscape (<= 1024px) */
+@media (max-width: 1024px) {
+  .nav-menu {
+    gap: 1.2rem;
+  }
+
+  .statement-grid,
+  .signature-card,
+  .signature-card.reverse,
+  .contact-grid,
+  .space-grid,
+  .team-card {
+    grid-template-columns: 1fr;
+  }
+
+  .signature-card.reverse .signature-img-col {
+    order: 1;
+  }
+  .signature-card.reverse .signature-info-col {
+    order: 2;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-item.tall {
+    grid-row: auto;
+    height: 400px;
+  }
+
+  .reviews-grid,
+  .memberships-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .lightbox-content-box {
+    grid-template-columns: 1fr;
+    max-height: 95vh;
+    overflow-y: auto;
+  }
+
+  .lightbox-img-wrapper {
+    height: 320px;
+  }
+}
+
+/* Tablet Portrait & Mobile (<= 768px) */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 56px; /* Account for fixed mobile bottom bar */
+  }
+
+  .mobile-action-bar {
+    display: grid;
+  }
+
+  .nav-menu,
+  .header-actions .btn {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .hero-section {
+    min-height: 85vh;
+    padding-top: 4rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signature-img-col {
+    height: 320px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    grid-template-columns: 1fr;
+  }
+
+  .team-img-wrapper {
+    height: 320px;
+  }
+
+  .space-gallery-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .space-gallery-main,
+  .space-gallery-side {
+    height: 300px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .section-padding {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .site-header {
+    padding: 1rem 0;
+  }
+
+  .service-card,
+  .review-card,
+  .membership-card,
+  .hours-widget,
+  .location-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Accessibility: Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
