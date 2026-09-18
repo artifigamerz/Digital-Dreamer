@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="steamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#171A21"/>
+      <stop offset="50%" stop-color="#1B2838"/>
+      <stop offset="100%" stop-color="#2A475E"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="20" width="560" height="340" rx="24" fill="url(#steamGrad)"/>
+  <g transform="translate(60, 70)">
+    <circle cx="30" cy="30" r="24" fill="none" stroke="#66C0F4" stroke-width="4"/>
+    <text x="70" y="40" font-family="system-ui, sans-serif" font-weight="900" font-size="32" fill="#ffffff" letter-spacing="3">STEAM</text>
+  </g>
+  <text x="60" y="210" font-family="system-ui, sans-serif" font-weight="800" font-size="28" fill="#66C0F4">WALLET CODE</text>
+  <text x="60" y="245" font-family="system-ui, sans-serif" font-size="14" fill="#C7D5E0">GLOBAL REDEEMABLE PC GAMING WALLET</text>
+  <rect x="60" y="280" width="220" height="46" rx="10" fill="#66C0F4" fill-opacity="0.2"/>
+  <text x="75" y="310" font-family="system-ui, sans-serif" font-weight="800" font-size="20" fill="#ffffff">Rs. 1,000 - 2,500</text>
+</svg>
