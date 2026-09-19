@@ -10,7 +10,8 @@
   const state = {
     db: null,
     currentUser: null, // { id, name, email, role: 'SELLER'|'ADMIN', phone }
-    activeModal: null
+    
+     activeModal: null
   };
 
   const $ = (selector) => document.querySelector(selector);
@@ -27,7 +28,7 @@
   // Load Database State
   async function loadDatabase() {
     try {
-      const res = await fetch('/api/state');
+      const res = await fetch('data/database.json');
       if (res.ok) {
         state.db = await res.json();
       } else {
@@ -366,7 +367,7 @@
     return `
       <div class="campaign-card">
         <div class="campaign-banner">
-          <img src="${cmp.image_url || '/images/campaigns/xbox_camp.svg'}" alt="${cmp.title}">
+          <img src="${cmp.image_url || 'images/campaigns/xbox_camp.svg'}" alt="${cmp.title}">
         </div>
         <div class="campaign-body">
           <span class="campaign-brand-tag">${cmp.brand_name}</span>
@@ -1409,7 +1410,7 @@
         end_date: '2026-12-31',
         status: 'ACTIVE',
         featured: 1,
-        image_url: '/images/campaigns/xbox_camp.svg'
+        image_url: 'images/campaigns/xbox_camp.svg'
       };
 
       state.db.campaigns.unshift(newCmp);
