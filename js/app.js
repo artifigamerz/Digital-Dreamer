@@ -620,12 +620,6 @@
               </button>
             </form>
 
-            <div style="margin-top: 24px; text-align: center; font-size: 0.88rem; color: var(--text-muted); background: rgba(15, 23, 42, 0.6); padding: 12px; border-radius: 8px;">
-              Demo Accounts:<br>
-              <strong>Seller:</strong> seller@rewardhub.pk / seller123<br>
-              <strong>Admin:</strong> admin@rewardhub.pk / admin123
-            </div>
-
             <div style="margin-top: 20px; text-align: center; font-size: 0.9rem;">
               New seller? <a href="#" data-route="/register" style="color: #10B981; font-weight: 700;">Register Seller Account</a>
             </div>
@@ -645,7 +639,7 @@
         return;
       }
 
-      if (user.password_plain && user.password_plain !== pass && pass !== 'seller123' && pass !== 'admin123') {
+      if (user.password_plain && user.password_plain !== pass) {
         showToast('Invalid email or password', 'error');
         return;
       }
@@ -803,7 +797,7 @@
                     </td>
                   </tr>
                 `).join('')}
-                ${submissions.length === 0 ? `<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 40px;">No gift card submissions submitted yet. <a href="/campaigns" data-route="/campaigns" style="color: #10B981;">Sell a gift card now</a>.</td></tr>` : ''}
+                ${submissions.length === 0 ? `<tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 40px;">No gift card submissions submitted yet. <a href="/campaigns" data-route="/campaigns">Sell a gift card</a> to get started.</td></tr>` : ''}
               </tbody>
             </table>
           </div>
@@ -1465,11 +1459,11 @@
           <div style="display: flex; flex-direction: column; gap: 24px;">
             <div style="background: var(--bg-card); padding: 24px; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
               <h3>1. Select an Active Buying Campaign</h3>
-              <p style="color: var(--text-secondary); margin-top: 8px;">Explore active campaigns on our website. Each campaign details the required gift card brand, required value (e.g. Rs. 500), and the exact cash payout you will receive (e.g. Rs. 350).</p>
+              <p style="color: var(--text-secondary); margin-top: 8px;">Explore active campaigns on our website. Each campaign details the required gift card brand, required value (e.g. Rs. 500), and the cash reward you receive after verification.</p>
             </div>
             <div style="background: var(--bg-card); padding: 24px; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
               <h3>2. Submit Gift Card Details & Payout Account</h3>
-              <p style="color: var(--text-secondary); margin-top: 8px;">Fill in the campaign's submission form with your gift card code, any required proof image, and your preferred payment method (EasyPaisa, JazzCash, or Bank Account).</p>
+              <p style="color: var(--text-secondary); margin-top: 8px;">Fill in the campaign submission form with your gift card code, any required proof details, and your preferred payment method (EasyPaisa, JazzCash, or bank transfer).</p>
             </div>
             <div style="background: var(--bg-card); padding: 24px; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
               <h3>3. Admin Verification</h3>
